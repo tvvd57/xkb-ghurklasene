@@ -11,7 +11,7 @@ for this, we'll use nano, any text editor would work.
 sudo nano /usr/share/X11/xkb/rules/evdev.xml
 ```
 
-before a "<layout>" line, past the following:
+before a "<‎ layout>" line, past the following:
 ```xml
 <layout>
       <configItem>
