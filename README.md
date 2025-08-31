@@ -25,6 +25,12 @@ before a "<‎ layout>" line, past the following:
             <description>Ghurklasene (Basic)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>qwerty</name>
+            <description>Ghurklasene (ÞWERTY)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
 ```
@@ -40,6 +46,7 @@ now we'll modify ``evdev.lst``. Open it, then after the ``! layout`` line, add:
 And now after the ``! variant`` line, add:
 ```lst
   basic ghurklasene: Ghurklasene (Basic)
+  qwerty ghurklasene: Ghurklasene (ÞWERTY)
 ```
 
 Don't forget to save, then congrats! just a mere system reboot then your keyboard is ready to use
