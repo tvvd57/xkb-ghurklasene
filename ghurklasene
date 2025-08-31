@@ -21,7 +21,7 @@ xkb_symbols "basic" {
 
     key <AD01>    {[ a, A, VoidSymbol, VoidSymbol ]};
     key <AD02>    {[ z, Z, VoidSymbol, VoidSymbol ]};
-    key <AD03>    {[ e, E, VoidSymbol, VoidSymbol ]};
+    key <AD03>    {[ e, E, U00E8, U00C8 ]}; 
     key <AD04>    {[ r, R, VoidSymbol, VoidSymbol ]};
     key <AD05>    {[ t, T, VoidSymbol, VoidSymbol ]};
     key <AD06>    {[ y, Y, VoidSymbol, VoidSymbol ]};
@@ -64,8 +64,8 @@ xkb_symbols "basic" {
 // | Ǝ  | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9Ç | 0À | °  | +  | <--   |
 // | ə  | &  | ~ é| " #| ' {| ( [| - || ² ³| _ \| №ç | @à | ) ]| = }|       |
 //  ========================================================================
-// | |<-  | A  | Z  | E  | R  | T  | Y  | U  | IĲ | OŒ | P  | Ʒ  | ^` |   , |
-// |  ->| | a  | z  | e  | r  | t  | y  | u  | iĳ | oœ | p  | ʒ  | "- | <-' |
+// | |<-  | A  | Z  | EÈ | R  | T  | Y  | U  | IĲ | OŒ | P  | Ʒ  | ^` |   , |
+// |  ->| | a  | z  | eè  | r  | t  | y  | u  | iĳ | oœ | p  | ʒ  | "- | <-' |
 //  ===================================================================¬    |
 // |       | ÞQ | SŠ | DÐ | F  | G  | H  | JȲ | KĶ | LŁ | M  | %µ | $₽ |    |
 // | MAJ   | þq | sš | dð | f  | g  | h  | jȳ | kķ | lł | m  | *• | €£ |    |
@@ -76,3 +76,83 @@ xkb_symbols "basic" {
 // |      |      |      |                       |       |      |     |      |
 // | Ctrl | Super| Alt  | Space    Nobreakspace | AltGr | Super|Menu | Ctrl |
 //  ¯¯¯¯¯¯ ¯¯¯¯¯¯ ¯¯¯¯¯¯ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ ¯¯¯¯¯¯¯ ¯¯¯¯¯¯ ¯¯¯¯¯ ¯¯¯¯¯¯
+
+
+default partial alphanumeric_keys
+xkb_symbols "qwerty" {
+
+    name[Group1]="Ghurklasene (ÞWERTY)";
+
+    key <TLDE>    {[ schwa, U018E, VoidSymbol, VoidSymbol ]};
+    key <AE01>    {[ ampersand, 1, VoidSymbol, VoidSymbol ]};
+    key <AE02>    {[ dead_tilde, 2, eacute, eacute ]};
+    key <AE03>    {[ quotedbl, 3, numbersign, numbersign ]};
+    key <AE04>    {[ apostrophe, 4, braceleft, braceleft ]};
+    key <AE05>    {[ parenleft, 5, bracketleft, bracketleft ]};
+    key <AE06>    {[ minus, 6, bar, bar ]};
+    key <AE07>    {[ twosuperior, 7, threesuperior, threesuperior ]};
+    key <AE08>    {[ underscore, 8, backslash, backslash ]};
+    key <AE09>    {[ U2116, 9, U00E7, U00C7 ]};
+    key <AE10>    {[ at, 0, U00E0, U00C0 	 ]};
+    key <AE11>    {[ parenright, degree, bracketright, bracketright ]};
+    key <AE12>    {[ equal, plus, braceright, braceright ]};
+
+    key <AD01>    {[ a, A, VoidSymbol, VoidSymbol ]};
+    key <AD02>    {[ z, Z, VoidSymbol, VoidSymbol ]};
+    key <AD03>    {[ e, E, VoidSymbol, VoidSymbol ]};
+    key <AD04>    {[ r, R, VoidSymbol, VoidSymbol ]};
+    key <AD05>    {[ t, T, VoidSymbol, VoidSymbol ]};
+    key <AD06>    {[ y, Y, VoidSymbol, VoidSymbol ]};
+    key <AD07>    {[ u, U, VoidSymbol, VoidSymbol ]};
+    key <AD08>    {[ i, I, U0133, U0132 ]};
+    key <AD09>    {[ o, O, U0153, U0152 ]};
+    key <AD10>    {[ p, P, VoidSymbol, VoidSymbol ]};
+    key <AD11>    {[ ezh, EZH, VoidSymbol, VoidSymbol ]};
+    key <AD12>    {[ dead_diaeresis, dead_circumflex, dead_macron, dead_grave ]};
+
+    key <AC01>    {[ thorn, THORN, q, Q ]};
+    key <AC02>    {[ s, S, U0161, U0160 ]};
+    key <AC03>    {[ d, D, eth, ETH ]};
+    key <AC04>    {[ f, F, VoidSymbol, VoidSymbol ]};
+    key <AC05>    {[ g, G, VoidSymbol, VoidSymbol ]};
+    key <AC06>    {[ h, H, VoidSymbol, VoidSymbol ]};
+    key <AC07>    {[ j, J, U0233, U0232 ]};
+    key <AC08>    {[ k, K, U0137, U0136 ]};
+    key <AC09>    {[ l, L, U0142, U0141 ]};
+    key <AC10>    {[ m, M, VoidSymbol, VoidSymbol ]};
+    key <AC11>    {[ asterisk, percent, U2022, mu ]};
+    key <BKSL>    {[ EuroSign, dollar, sterling, U20BD ]};
+
+    key <LSGT>    {[ less, greater, VoidSymbol, VoidSymbol ]};
+    key <AB01>    {[ w, W, VoidSymbol, VoidSymbol ]};
+    key <AB02>    {[ x, X, U00DF, U1E9E ]};
+    key <AB03>    {[ c, C, U010D, U010C ]};
+    key <AB04>    {[ v, V, VoidSymbol, VoidSymbol ]};
+    key <AB05>    {[ b, B, VoidSymbol, VoidSymbol ]};
+    key <AB06>    {[ n, N, U0272, U019D ]};
+    key <AB07>    {[ comma, question, VoidSymbol, VoidSymbol ]};
+    key <AB08>    {[ semicolon, period, VoidSymbol, VoidSymbol ]};
+    key <AB09>    {[ colon, slash, VoidSymbol, VoidSymbol ]};
+    key <AB10>    {[ exclam, section, VoidSymbol, VoidSymbol ]};
+
+    include "level3(ralt_switch)"
+};
+
+//  ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ _______
+// | Ǝ  | !  | @  | #  | $  | %  | №  | &  | *  | (  | )  | _  | +  | <--   |
+// | ə  | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 0  | -  | =  |       |
+//  ========================================================================
+// | |<-  | ÞQ | W  | EÈ | R  | T  | Y  | U  | IĲ | OŒ | P  | Ʒ  | {} |   , |
+// |  ->| | þq | w  | eè  | r  | t  | y  | u  | iĳ | oœ | p  | ʒ  | [] | <-' |
+//  ===================================================================¬    |
+// |       | A  | SŠ | DÐ | F  | G  | H  | JȲ | KĶ | LŁ | :  | "  | ^ |    |
+// | MAJ   | a  | sš | dð | f  | g  | h  | jȳ | kķ | lł | ;  | '  | ¨ |    |
+//  ========================================================================
+// | ^   | |  | Z  | Xẞ | CČ | V  | B  | NƝ | M  | <  | >  | ?  |     ^     |
+// | |   | \  | z  | xß | cč | v  | b  | nɲ | m  | ,  | .  | /  |     |     |
+//  ========================================================================
+// |      |      |      |                       |       |      |     |      |
+// | Ctrl | Super| Alt  | Space    Nobreakspace | AltGr | Super|Menu | Ctrl |
+//  ¯¯¯¯¯¯ ¯¯¯¯¯¯ ¯¯¯¯¯¯ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ ¯¯¯¯¯¯¯ ¯¯¯¯¯¯ ¯¯¯¯¯ ¯¯¯¯¯¯
+
+
